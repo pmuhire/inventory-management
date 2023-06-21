@@ -2,6 +2,7 @@
 #include <commands.h>
 
 void help() {
+     std::cout <<std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
     std::cout << "*              Commands syntaxes                 *" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;

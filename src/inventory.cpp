@@ -3,6 +3,7 @@
 #include <sstream>
 #include <algorithm>
 #include <inventory.h>
+#include <iomanip>
 
 std::vector<std::string> split(const std::string &str, char delimiter)
 {
@@ -76,7 +77,7 @@ void addItem(std::string &item_id, std::string &item_name, const std::string &it
     // CHECK IF ITEM EXIST
     if (isItemExist(item_id, item_name))
     {
-        std::cout << "Item with either ID " << item_id << " or Name" << item_name << " already exists." << std::endl;
+        std::cout << "Item with either ID: " << item_id << " or Name: " << item_name << " already exists." << std::endl;
         return;
     }
 
@@ -141,7 +142,9 @@ void listItems()
     // Display the sorted items
     for (const auto &item : items)
     {
-        std::cout << "Item ID: " << item.id << "\t Item Name: " << item.name
-                  << "\t Quantity: " << item.quantity << "\t Reg Date: " << item.registration_date << std::endl;
+        std::cout << std::setw(5) << "Item ID: "<< std::setw(5)  << item.id
+              << std::setw(20) << "Item Name: "<< std::setw(5)  << item.name
+              << std::setw(12) << "Quantity: " << std::setw(5) << item.quantity
+              << std::setw(15) << "Reg Date: " << item.registration_date << std::endl;
     }
 }

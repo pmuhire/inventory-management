@@ -26,6 +26,7 @@ This is a simple inventory management system implemented in C++. It allows users
     cd build
     cmake ..
     make
+    
     ```
 
 3. Run the program:

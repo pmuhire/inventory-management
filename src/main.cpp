@@ -12,6 +12,7 @@ int main() {
     std::cout << "--------------------------------------------------" << std::endl;
     std::cout << "*              Inventory Management System       *" << std::endl;
     std::cout << "--------------------------------------------------" << std::endl;
+    std::cout <<std::endl;
     help();
 
     while (true) {
