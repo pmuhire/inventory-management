@@ -16,7 +16,7 @@ This is a simple inventory management system implemented in C++. It allows users
 
 1. Clone the repository:
 
-```git clone https://github.com/your-username/inventory-management.git```
+```git clone https://github.com/pmuhire/inventory-management.git```
 
 2. Build the project:
 
